@@ -1,7 +1,19 @@
 ---
 import DefaultLayout from "../layouts/Default.astro";
+import Album from "../components/Album.astro";
+import { getRandomAlbums } from "../services/albums.ts";
+
+const albums = getRandomAlbums(5);
 ---
 
-<DefaultLayout title="Home Page">
-  <p>My page content, wrapped in a layout!</p>
+<DefaultLayout title="Albumzle">
+  {
+    albums.map((album) => (
+      <Album
+        artist={album.artist}
+        album={album.name}
+        releaseDate={album.releaseDate}
+      />
+    ))
+  }
 </DefaultLayout>
