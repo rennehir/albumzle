@@ -1,0 +1,64 @@
+{
+  "artists": [
+    {
+      "artist": "Arctic Monkeys",
+      "albums": [
+        {
+          "name": "Whatever People Say I Am, That's What I'm Not",
+          "releaseDate": "2006-01-23"
+        },
+        { "name": "Favourite Worst Nightmare", "releaseDate": "2007-04-23" },
+        { "name": "Humbug", "releaseDate": "2009-08-19" },
+        { "name": "Suck It and See", "releaseDate": "2011-06-06" },
+        { "name": "AM", "releaseDate": "2013-09-09" },
+        {
+          "name": "Tranquility Base Hotel & Casino",
+          "releaseDate": "2018-05-11"
+        },
+        { "name": "The Car", "releaseDate": "2022-10-21" }
+      ]
+    },
+    {
+      "artist": "Daft Punk",
+      "albums": [
+        { "name": "Homework", "releaseDate": "1997-01-20" },
+        { "name": "Discovery", "releaseDate": "2001-03-12" },
+        { "name": "Human After All", "releaseDate": "2005-03-14" },
+        { "name": "Random Access Memories", "releaseDate": "2013-05-17" }
+      ]
+    },
+    {
+      "artist": "Taylor Swift",
+      "albums": [
+        { "name": "Taylor Swift", "releaseDate": "2006-10-24" },
+        { "name": "Fearless", "releaseDate": "2008-11-11" },
+        { "name": "Speak Now", "releaseDate": "2010-10-25" },
+        { "name": "Red", "releaseDate": "2012-10-22" },
+        { "name": "1989", "releaseDate": "2014-10-27" },
+        { "name": "Reputation", "releaseDate": "2017-11-10" },
+        { "name": "Lover", "releaseDate": "2019-08-23" }
+      ]
+    },
+    {
+      "artist": "Radiohead",
+      "albums": [
+        { "name": "Pablo Honey", "releaseDate": "1993-02-22" },
+        { "name": "The Bends", "releaseDate": "1995-03-13" },
+        { "name": "OK Computer", "releaseDate": "1997-05-21" },
+        { "name": "Kid A", "releaseDate": "2000-10-02" },
+        { "name": "Amnesiac", "releaseDate": "2001-06-04" },
+        { "name": "Hail to the Thief", "releaseDate": "2003-06-09" }
+      ]
+    },
+    {
+      "artist": "Kendrick Lamar",
+      "albums": [
+        { "name": "Section.80", "releaseDate": "2011-07-02" },
+        { "name": "good kid, m.A.A.d city", "releaseDate": "2012-10-22" },
+        { "name": "To Pimp a Butterfly", "releaseDate": "2015-03-15" },
+        { "name": "DAMN.", "releaseDate": "2017-04-14" },
+        { "name": "Mr. Morale & the Big Steppers", "releaseDate": "2022-05-13" }
+      ]
+    }
+  ]
+}
