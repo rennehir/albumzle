@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/rennehir/albumzle/compare/v1.1.0...v1.2.0) (2026-04-14)
+
+
+### Features
+
+* Add validation, guessing, attempts ([ba9de03](https://github.com/rennehir/albumzle/commit/ba9de0352d64e327724e6618ccebc67af09a22cf))
+
 # [1.1.0](https://github.com/rennehir/albumzle/compare/v1.0.0...v1.1.0) (2026-04-14)
 
 
