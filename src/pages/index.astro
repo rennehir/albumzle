@@ -1,19 +1,11 @@
 ---
 import DefaultLayout from "../layouts/Default.astro";
-import Album from "../components/Album.astro";
+import AlbumsList from "../components/AlbumsList.astro";
 import { getRandomAlbums } from "../services/albums.ts";
 
 const albums = getRandomAlbums(5);
 ---
 
 <DefaultLayout title="Albumzle">
-  {
-    albums.map((album) => (
-      <Album
-        artist={album.artist}
-        album={album.name}
-        releaseDate={album.releaseDate}
-      />
-    ))
-  }
+  <AlbumsList albums={albums} />
 </DefaultLayout>

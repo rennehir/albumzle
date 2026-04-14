@@ -1,0 +1,19 @@
+---
+import Album from "../components/Album.astro";
+
+const { albums } = Astro.props;
+---
+
+<ul>
+  {
+    albums.map((album) => (
+      <li>
+        <Album
+          artist={album.artist}
+          album={album.name}
+          releaseDate={album.releaseDate}
+        />
+      </li>
+    ))
+  }
+</ul>
