@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "generate-types": "wrangler types"
+    "generate-types": "wrangler types",
+    "test": "vitest"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.9",
@@ -30,6 +31,7 @@
     "@types/react-dom": "^19.2.3",
     "globals": "^17.5.0",
     "semantic-release": "^25.0.3",
-    "typescript": "^6.0.2"
+    "typescript": "^6.0.2",
+    "vitest": "^4.1.4"
   }
 }
