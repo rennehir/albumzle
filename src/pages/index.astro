@@ -2,10 +2,13 @@
 import DefaultLayout from "../layouts/Default.astro";
 import { Game } from "../components/Game.tsx";
 import { getDailyPuzzle } from "../lib/puzzle";
+import packageJson from "../../package.json";
 
 const puzzle = getDailyPuzzle(new Date());
 ---
 
 <DefaultLayout title="Albumzle">
   <Game client:load puzzle={puzzle} />
+
+  <span>Version: {packageJson.version}</span>
 </DefaultLayout>
