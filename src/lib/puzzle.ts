@@ -4,7 +4,13 @@ import data from "../../data/sample.json";
 
 const ALBUM_COUNT = 5;
 
-export const getDailyPuzzle = (date: Date) => {
+export type Puzzle = {
+  seed: string;
+  shuffled: (typeof data)["albums"];
+  solution: (typeof data)["albums"];
+};
+
+export const getDailyPuzzle = (date: Date): Puzzle => {
   const seed = date.toISOString().slice(0, 10);
 
   // Separate RNGs for clarity

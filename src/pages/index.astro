@@ -1,11 +1,11 @@
 ---
 import DefaultLayout from "../layouts/Default.astro";
-import AlbumsList from "../components/AlbumsList.astro";
-import { getDailyPuzzle } from "../services/puzzle";
+import { Game } from "../components/Game.tsx";
+import { getDailyPuzzle } from "../lib/puzzle";
 
 const puzzle = getDailyPuzzle(new Date());
 ---
 
 <DefaultLayout title="Albumzle">
-  <AlbumsList albums={puzzle.shuffled} />
+  <Game client:load puzzle={puzzle} />
 </DefaultLayout>
