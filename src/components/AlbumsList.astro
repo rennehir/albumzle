@@ -1,5 +1,10 @@
 ---
 import Album from "../components/Album.astro";
+import data from "../../data/sample.json";
+
+interface Props {
+  albums: (typeof data)["albums"];
+}
 
 const { albums } = Astro.props;
 ---
@@ -8,11 +13,7 @@ const { albums } = Astro.props;
   {
     albums.map((album) => (
       <li>
-        <Album
-          artist={album.artist}
-          album={album.name}
-          releaseDate={album.releaseDate}
-        />
+        <Album {...album} />
       </li>
     ))
   }
