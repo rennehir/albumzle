@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/rennehir/albumzle/compare/v1.2.0...v1.3.0) (2026-04-17)
+
+
+### Features
+
+* Implement theming ([ca45800](https://github.com/rennehir/albumzle/commit/ca4580021f4e2fb7b85d87bdcaf0326f69fab6b3))
+* Use Daisy UI for theming ([95954a5](https://github.com/rennehir/albumzle/commit/95954a5e570e74737114b2f3bd72a2bb63ef1bf4))
+
 # [1.2.0](https://github.com/rennehir/albumzle/compare/v1.1.0...v1.2.0) (2026-04-14)
 
 
