@@ -1,0 +1,12 @@
+---
+import { Game } from "../components/Game";
+const { puzzle } = Astro.props;
+---
+
+<div class="min-h-screen bg-base-200">
+  <div class="max-w-xl mx-auto p-4">
+    <h1 class="text-3xl font-bold mb-4 text-center">🎧 Albumzle</h1>
+
+    <Game client:load puzzle={puzzle} />
+  </div>
+</div>
