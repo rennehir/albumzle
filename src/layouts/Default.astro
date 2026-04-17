@@ -1,26 +1,32 @@
 ---
-const { title } = Astro.props;
+import { buildTheme } from "../styles/themes";
+import { flattenTheme } from "../styles/themeUtils";
+
+const theme = buildTheme("dark", "comfortable");
+console.log(theme);
+const flattenedTheme = flattenTheme(theme);
+console.log(flattenedTheme);
 ---
 
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Albumzle</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <style define:vars={flattenedTheme}>
+      body {
+        margin: 0;
+        background: var(--colors-bg);
+        color: var(--colors-text);
+        font-family: system-ui, sans-serif;
+      }
+    </style>
   </head>
+
   <body>
-    <nav>
-      <a href="#">Home</a>
-    </nav>
-    <h1>{title}</h1>
     <main>
       <slot />
-      <!-- your content is injected here -->
     </main>
   </body>
-  <style>
-    h1 {
-      font-size: 2rem;
-    }
-  </style>
 </html>
