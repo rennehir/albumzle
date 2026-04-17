@@ -1,14 +1,9 @@
 import { createRNG } from "./rng";
 import { shuffleWithSeed } from "./shuffle";
 import data from "../../data/sample.json";
+import type { Puzzle } from "../types";
 
 const ALBUM_COUNT = 5;
-
-export type Puzzle = {
-  seed: string;
-  shuffled: (typeof data)["albums"];
-  solution: (typeof data)["albums"];
-};
 
 export const getDailyPuzzle = (date: Date): Puzzle => {
   const seed = date.toISOString().slice(0, 10);
