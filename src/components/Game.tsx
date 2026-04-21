@@ -3,6 +3,7 @@ import { Slots } from "./Slots";
 import { Pool } from "./Pool";
 import type { Album, Attempt, Puzzle } from "../types";
 import { History } from "./History";
+import { ResultShare } from "./ResultShare";
 
 const MAX_ATTEMPTS = 5;
 
@@ -77,6 +78,7 @@ export const Game = ({ puzzle }: GameProps) => {
 
   return (
     <>
+      {gameOver && <ResultShare attempts={attempts} won={won} />}
       <History attempts={attempts} />
       <Slots slots={slots} removeFromSlot={removeFromSlot} />
       <Pool pool={pool} addToSlot={addToSlot} />
