@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/rennehir/albumzle/compare/v1.3.0...v1.4.0) (2026-04-21)
+
+
+### Features
+
+* Add result sharing feature ([8e2ff25](https://github.com/rennehir/albumzle/commit/8e2ff25f6484e1c0cd0af3246873ade455524fb4))
+
 # [1.3.0](https://github.com/rennehir/albumzle/compare/v1.2.0...v1.3.0) (2026-04-17)
 
 
