@@ -25,7 +25,9 @@ export const ResultShare = ({ attempts, won, maxAttempts = 5 }: Props) => {
   const shareText = `Albumzle ${date}
 ${rows.join("\n")}
 
-${won ? `${attempts.length}/${maxAttempts}` : `X/${maxAttempts}`}`;
+${won ? `${attempts.length}/${maxAttempts}` : `X/${maxAttempts}`}
+
+${window.location}`;
 
   const handleCopy = async () => {
     try {
