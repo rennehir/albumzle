@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/rennehir/albumzle/compare/v1.4.0...v1.4.1) (2026-04-22)
+
+
+### Bug Fixes
+
+* Show URL in share text ([7738a23](https://github.com/rennehir/albumzle/commit/7738a23ebcbbbaa33c3722d2b3a80e8fcb108868))
+
 # [1.4.0](https://github.com/rennehir/albumzle/compare/v1.3.0...v1.4.0) (2026-04-21)
 
 
